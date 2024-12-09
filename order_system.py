@@ -115,10 +115,13 @@ def update_order(order, menu_selection, menu_items):
 
             # TODO: Ask the customer for the quantity of the menu item
             # TODO: Use the item name variable in the question
-
+            quantity = input(f"How many {item_name} would you like to order? ")
 
             # TODO: Check if the quantity is a number, default to 1 if not
-
+            if quantity.isdigit():
+                quantity = 1
+            else:
+                quantity = int(quantity)
 
             # TODO: Add a dictionary to the order list 
             # TODO: The dictionary should include the item name, price, and quantity
