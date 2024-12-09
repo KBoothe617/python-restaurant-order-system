@@ -56,11 +56,11 @@ def place_order(menu):
                 i += 1
 
         # TODO: Ask customer to input menu item number
-
+        menu_selection = input("Please enter the number of the item you would like to order: ")
 
         # TODO: Update the order list using the update_order function
         # TODO: Send the order list, menu selection, and menu items as arguments
-
+        order = update_order(order, menu_selection, menu_items)
 
         # TODO: Ask the customer if they would like to order anything else
         # TODO: Let the customer know if they should type 'n' or 'N' to quit
