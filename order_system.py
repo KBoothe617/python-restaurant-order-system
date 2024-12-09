@@ -127,7 +127,11 @@ def update_order(order, menu_selection, menu_items):
             # TODO: The dictionary should include the item name, price, and quantity
             # TODO: Use the following names for the dictionary keys:
             # TODO: "Item name", "Price", "Quantity"
-
+            order.append({
+                "Item name": item_name,
+                "Price": menu_items[menu_selection]["Price"],
+                "Quantity": quantity
+            })
         # TODO: When the user's input isn't valid, 
         # TODO: tell the customer that their input isn't valid
 
