@@ -42,6 +42,7 @@ def place_order(menu):
 
         # TODO: Loop through the menu dictionary
         # TODO: Extract the food category and the options for each category
+        for food_category, options in menu.items():
 
             # TODO: Loop through the options for each food category
             # TODO: Extract the meal and the price for each option
