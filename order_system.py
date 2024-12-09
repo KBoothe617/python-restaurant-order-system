@@ -46,7 +46,7 @@ def place_order(menu):
 
             # TODO: Loop through the options for each food category
             # TODO: Extract the meal and the price for each option
-
+            for meal, price in options.items():
                 # Print the menu item number, food category, meal, and price
                 # TODO: Only if you used different variable names
                 # TODO: Update the variable names in the following function
