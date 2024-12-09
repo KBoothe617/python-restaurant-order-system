@@ -104,14 +104,14 @@ def update_order(order, menu_selection, menu_items):
                     and quantity ordered (updated as needed).
     """
     # TODO: Check if the customer typed a number
-
+    if menu_selection.isdigit():
         # TODO: Convert the menu selection to an integer
-
+        menu_selection = int(menu_selection)
 
         # TODO: Check if the menu selection is in the menu items keys
-
+        if menu_selection in menu_items.keys():
             # TODO: Store the item name as a variable
-
+            item_name = menu_items[menu_selection]["Item name"]
 
             # TODO: Ask the customer for the quantity of the menu item
             # TODO: Use the item name variable in the question
